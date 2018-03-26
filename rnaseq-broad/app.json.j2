@@ -4,7 +4,7 @@
     "executionSystem": "hpc-tacc-maverick",
     "executionType": "HPC",
     "parallelism": "SERIAL",
-    "deploymentPath": "{{ agave.username }}/apps/{{ app.name }}-{{ app.version }}",
+    "deploymentPath": "{{ agave.username }}/apps/{{ app.name }}",
     "deploymentSystem": "data-sd2e-projects-users",
     "defaultProcessorsPerNode": 20,
     "defaultNodeCount": 1,
@@ -19,7 +19,7 @@
             "RNA-Seq",
             "Mapping",
             "rnaseq-broad",
-            "docker://index.docker.io/sd2e/rnaseq-broad:0.1.2"
+            "docker://index.docker.io/sd2e/rnaseq-broad"
     ],
     "helpURI":"https://sd2e.org/develop/",
     "longDescription": "A tool for mapping, counting, and profiling RNAseq data",
