@@ -6,7 +6,7 @@ import os
 '''Parameterize the test with a list of required files'''
 
 @pytest.mark.parametrize("file_list", [
-    (['rna_free_reads.fastq'])
+    (['4342744.circuit1,4342744.circuit1.star.log.out'])
 ])
 
 def test_files(job_directory,file_list):
