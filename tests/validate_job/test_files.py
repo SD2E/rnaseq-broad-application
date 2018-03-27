@@ -6,7 +6,7 @@ import os
 '''Parameterize the test with a list of required files'''
 
 @pytest.mark.parametrize("file_list", [
-    (['4342744.circuit1,4342744.circuit1.star.log.out'])
+    (['4342744.circuit1','4342744.circuit1.star.log.out'])
 ])
 
 def test_files(job_directory,file_list):
