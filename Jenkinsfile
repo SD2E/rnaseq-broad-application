@@ -4,7 +4,7 @@ pipeline {
     agent any
     environment {
         AGAVE_GET_DATA    = 1
-        AGAVE_JOB_TIMEOUT = 1800
+        AGAVE_JOB_TIMEOUT = 3000
         AGAVE_JOB_GET_DIR = "job_output"
         AGAVE_DATA_URI    = "agave://data-tacc-work-cylu/sd2e-data/rnaseq-broad-application/test_data"
         CONTAINER_REPO    = "rnaseq-broad"
