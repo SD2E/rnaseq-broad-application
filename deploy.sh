@@ -40,8 +40,7 @@ fi
 # Assumptions: 
 _APPNAME=$(jq -r .name $APPJSON)
 _APPVERS=$(jq -r .version $APPJSON)
-# Al: version removed here
-_APPID="${_APPNAME}"
+_APPID="${_APPNAME}-${_APPVERS}"
 
 # username/apps/app-0.1.0
 _DEPPATH=$(jq -r .deploymentPath $APPJSON)

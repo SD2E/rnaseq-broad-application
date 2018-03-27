@@ -1,10 +1,10 @@
 {
   "name": "{{ agave.username }}-{{ app.name }}-test-{{ date_time.iso8601_basic_short }}",
-  "appId": "{{ agave.username }}-{{ app.name }}",
+  "appId": "{{ agave.username }}-{{ app.name }}-{{ app.version }}",
   "archive": false,
   "inputs": {
-    "read1":  "agave://data-sd2e-community/sample/rnaseq-broad/test/4342744_rrna_free_reads_unmerged_R1.40k.fastq",
-    "read2": "agave://data-sd2e-community/sample/rnaseq-broad/test/4342744_rrna_free_reads_unmerged_R2.40k.fastq",
+    "read1":  "agave://data-sd2e-community/processed/Q0/rule30/sd2.ginkgo/RNAseq/170925_NB501485_0078_AHHC3WBGX3/4311022_S55_R1_001_rna_free_reads.fastq",
+    "read2": "agave://data-sd2e-community/processed/Q0/rule30/sd2.ginkgo/RNAseq/170925_NB501485_0078_AHHC3WBGX3/4311022_S55_R2_001_rna_free_reads.fastq",
     "fasta": "agave://data-sd2e-community/archive/shared-q0-hackathon/yeast-gates/W303_gff_references/yeastgate_references/circuit1.fa",
     "gff": "agave://data-sd2e-community/archive/shared-q0-hackathon/yeast-gates/W303_gff_references/yeastgate_references/circuit1.gff",
     "bed": "agave://data-sd2e-community/archive/shared-q0-hackathon/yeast-gates/W303_gff_references/yeastgate_references/circuit1.bed"
